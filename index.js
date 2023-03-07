@@ -4,7 +4,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 105;
 const currentFrame = index => (
-  `./animation_done/${index.toString().padStart(4, '0')}.png`
+  `https://hryohni.github.io//animation_done/${index.toString().padStart(4, '0')}.png`
 )
 
 const preloadImages = () => {
