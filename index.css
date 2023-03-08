@@ -158,17 +158,33 @@ body
 
 
 .object {
+  
+  
+ 
   animation: MoveUpDown 3s ease-in-out infinite;
   position: absolute;
+  z-index: 10000;
+ 
+  width: fit-content;
+
   left: 0;
+ 
  
   bottom: 0;
 }
+
+ .object img 
+ {
+  width: 100%;
+ } 
 .move
 {
-  position: absolute;
-  top: 1100px;
+ 
+  position: relative;
+
+  top: 550px;
 }
+
 @keyframes MoveUpDown {
   0%, 100% {
     bottom: 0;
@@ -230,4 +246,14 @@ a.my-button{
  }
  a.my-button:active{
   transform: scale(0.95);
+ }
+
+
+
+ @media (max-width: 1250px) {
+ 
+    .top img
+    {
+      width: 10px;
+    }
  }

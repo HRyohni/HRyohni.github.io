@@ -1,7 +1,9 @@
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const type = document.getElementById("type");
+
 const context = canvas.getContext("2d");
+
 
 const frameCount = 200;
 const currentFrame = index => (
@@ -18,8 +20,9 @@ const preloadImages = () => {
 
 const img = new Image()
 img.src = currentFrame(1);
-canvas.width=1920 ;
-canvas.height=1500;
+canvas.width=window.screen.availWidth ;
+
+canvas.height=window.screen.availHeight;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }
@@ -56,14 +59,14 @@ else
         .type("I am ", { delay: 500 })
         .type("3D artist")
         .pause(500)
-        .delete(10)
+        .delete(9)
         .pause(500)
         .type("Frontend Programer")
         .pause(500)
-        .delete(19)
+        .delete(18)
         .type("Backend Programer")
         .pause(500)
-        .delete(18)
+        .delete(17)
 
         .type("Android App developer")
         .pause(500)
