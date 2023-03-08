@@ -2,10 +2,11 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 105;
+const frameCount = 200;
 const currentFrame = index => (
-  `https://hryohni.github.io//animation_done/${index.toString().padStart(4, '0')}.png`
-)
+  `./animation_done/${index.toString().padStart(4, '0')}.png`
+    // https://hryohni.github.io//animation_done/
+  )
 
 const preloadImages = () => {
   for (let i = 1; i < frameCount; i++) {
@@ -17,7 +18,7 @@ const preloadImages = () => {
 const img = new Image()
 img.src = currentFrame(1);
 canvas.width=1920 ;
-canvas.height=1080;
+canvas.height=1500;
 img.onload=function(){
   context.drawImage(img, 0, 0);
 }

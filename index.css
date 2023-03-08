@@ -127,6 +127,7 @@ body
   .art
   {
     background-color: #222A33 ;
+    position: relative;
   }
 
 
@@ -142,3 +143,32 @@ body
 
 
 
+.arttext
+{
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  z-index: 1000;
+}
+
+
+.object {
+  animation: MoveUpDown 3s ease-in-out infinite;
+  position: absolute;
+  left: 0;
+ 
+  bottom: 0;
+}
+.move
+{
+  position: absolute;
+  top: 1100px;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
