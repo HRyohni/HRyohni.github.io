@@ -1,5 +1,6 @@
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
+const type = document.getElementById("type");
 const context = canvas.getContext("2d");
 
 const frameCount = 200;
@@ -41,3 +42,32 @@ window.addEventListener('scroll', () => {
 });
 
 preloadImages()
+
+if (word = "test")
+    word = "new test"
+else
+    word = "test"
+
+    new TypeIt("#element", {
+        speed: 50,
+        waitUntilVisible: true,
+        loop: true,
+      })
+        .type("I am ", { delay: 500 })
+        .type("3D artist")
+        .pause(500)
+        .delete(10)
+        .pause(500)
+        .type("Frontend Programer")
+        .pause(500)
+        .delete(19)
+        .type("Backend Programer")
+        .pause(500)
+        .delete(18)
+
+        .type("Android App developer")
+        .pause(500)
+        .delete(22)
+
+    
+        .go();
