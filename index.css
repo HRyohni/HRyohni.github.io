@@ -96,6 +96,40 @@ body
   
   }
 
+
+  
+  .works {
+    display: grid;
+    grid-template-columns: auto auto auto auto   ;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+   
+    gap: 20px ;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+    padding: 20px;
+
+    text-align: center;
+  
+  }
+  .works .card img
+  {
+    width: auto;
+    max-width: 250px;
+    background-color: white;
+    height: auto;
+    max-height: 250px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .top p 
+  {font-size: 20px;
+   text-align: left;
+  }
+
   .gallery img {
    
     width: fit-content;
@@ -182,7 +216,7 @@ body
  
   position: relative;
 
-  top: 550px;
+  top: 650px;
 }
 
 @keyframes MoveUpDown {
@@ -198,11 +232,23 @@ body
 .card
 {
   background-color: #14191F;
-  height: 400px;
-  
+  height: fit-content;
+  height: fit-content;
   padding: 20px;
 
   border-radius: 10px;
+
+}
+
+.works .card img:hover
+{
+
+ 
+    max-width: 260px;
+  
+    max-height: 260px;
+   
+
 
 }
 
@@ -212,8 +258,15 @@ i
   font-size: 60px;
   margin-top: 20px;
 
+  
+
   margin-bottom: 20px;
   color: rgb(221, 143, 40);
+}
+
+i:hover
+{
+  font-size: 100px; 
 }
 
 .programing
