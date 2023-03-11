@@ -197,7 +197,6 @@ body
 .object {
   
   
- 
   animation: MoveUpDown 3s ease-in-out infinite;
   position: absolute;
   z-index: 10000;
@@ -219,7 +218,7 @@ body
  
   position: relative;
 
-  top: 650px;
+  top: 100vw;
 }
 
 @keyframes MoveUpDown {
@@ -258,7 +257,7 @@ body
 i
 {
 
-  font-size: 10vw;
+  font-size: 5vw;
   margin-top: 20px;
 
   
@@ -323,7 +322,7 @@ a.my-button{
  
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
   .top{
     padding: 10%;
@@ -377,6 +376,14 @@ font-size: 6vw;
   .works 
   {
    grid-template-columns: auto auto   ;
+   
+  }
+}
+@media screen and (max-width: 900px  ) {
+
+  .works 
+  {
+   grid-template-columns: auto;
    
   }
 }
