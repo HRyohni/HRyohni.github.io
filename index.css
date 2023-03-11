@@ -127,7 +127,10 @@ body
 
   .top p 
   {font-size: 20px;
-   text-align: left;
+    margin-left: auto;
+    text-align: justify;
+    margin-right: auto;
+ 
   }
 
   .gallery img {
@@ -235,7 +238,7 @@ body
   height: fit-content;
   height: fit-content;
   padding: 20px;
-
+  
   border-radius: 10px;
 
 }
@@ -308,5 +311,8 @@ a.my-button{
     .top img
     {
       width: 10px;
+      
+   
+
     }
  }
