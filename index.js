@@ -72,5 +72,9 @@ else
         .pause(500)
         .delete(22)
 
+        .type("Designer")
+        .pause(500)
+        .delete(7)
+
     
         .go();
