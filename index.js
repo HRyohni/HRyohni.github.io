@@ -1,11 +1,20 @@
 const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const type = document.getElementById("type");
-
+const frameCount = 200;
 const context = canvas.getContext("2d");
 
 
-const frameCount = 200;
+// preload images
+function preload_image(im_url,frameCount) {
+  for (let i = 1; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+  }
+
+}
+
+
 const currentFrame = index => (
   `./animation_done/${index.toString().padStart(4, '0')}.png`
     // https://hryohni.github.io//animation_done/
