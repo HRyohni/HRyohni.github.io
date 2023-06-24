@@ -1,3 +1,3 @@
 
 ## [My Personal Website](https://hryohni.github.io/)
-[testing proces](https://github.com/HRyohni/FlappyBird-ReinforcedMachineLearning/blob/main/Statistic%20Testing/Testing%20and%20Learning.md)
+![](https://cdn.discordapp.com/attachments/954027837713702933/1122108212552937482/image.png)
